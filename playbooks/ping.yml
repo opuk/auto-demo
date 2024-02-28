@@ -1,0 +1,5 @@
+- hosts: all
+  name: Playbook to ping all hosts
+  tasks:
+    - name: Ping all hosts
+      ansible.builtin.ping:

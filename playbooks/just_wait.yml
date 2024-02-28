@@ -1,0 +1,6 @@
+- hosts: all
+  name: Just a waiting playbook
+  tasks:
+    - name: Just waiting for a bit
+      ansible.builtin.pause:
+        minutes: 2
