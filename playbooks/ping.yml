@@ -3,3 +3,7 @@
   tasks:
     - name: Ping all hosts
       ansible.builtin.ping:
+      register: ping
+    - name: Set stats
+      ansible.builtin.set_stats:
+        data: "{{ ping }}"
