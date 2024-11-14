@@ -6,4 +6,5 @@
       register: ping
     - name: Set stats
       ansible.builtin.set_stats:
-        data: "{{ ping }}"
+        data:
+          ping_result: "{{ ping }}"
